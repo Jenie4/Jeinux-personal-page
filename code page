@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Jeinux — Personal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&family=Nunito:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --lila:#B997D6;
+      --accent:#FFFFFF;
+      --muted:rgba(255,255,255,0.85);
+    }
+    html,body{height:100%;margin:0;font-family:'Nunito',system-ui,Segoe UI,Arial,sans-serif;background:var(--lila);}
+    .container{max-width:1000px;margin:36px auto;padding:28px;background:linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));border-radius:18px;box-shadow:0 8px 40px rgba(0,0,0,0.18);backdrop-filter: blur(6px);}
+    header{display:flex;gap:18px;align-items:center}
+    .avatar{width:120px;height:120px;border-radius:18px;background:linear-gradient(135deg,#fff,#f3e8ff);display:flex;align-items:center;justify-content:center;font-family:'Baloo 2',cursive;font-size:36px;color:#6a2c7b}
+    h1{margin:0;font-family:'Baloo 2',cursive;font-size:32px;color:var(--accent)}
+    p.lead{color:var(--muted);margin:6px 0 0}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:22px;margin-top:24px}
+    .card{background:rgba(255,255,255,0.07);padding:18px;border-radius:12px}
+    .section-title{font-weight:700;margin:0 0 8px;color:var(--accent)}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .chip{background:rgba(255,255,255,0.08);padding:6px 10px;border-radius:999px;font-size:13px}
+    .portfolio{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    .proj{padding:12px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));}
+    footer{margin-top:18px;text-align:center;color:var(--muted);font-size:13px}
+    a.button{display:inline-block;padding:10px 14px;border-radius:999px;background:var(--accent);color:var(--lila);font-weight:700;text-decoration:none}
+    @media(max-width:880px){.grid{grid-template-columns:1fr}.avatar{width:96px;height:96px}}
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header>
+      <div class="avatar">JX</div>
+      <div>
+        <h1>Jeinux</h1>
+        <p class="lead">Diseñadora gráfica · Músico · Emprendedora — Repostería creativa (Kushiberry)</p>
+        <div style="margin-top:10px"><a class="button" href="#contact">Contactar</a></div>
+      </div>
+    </header>
+
+    <div class="grid">
+      <div>
+        <section class="card">
+          <h2 class="section-title">Sobre mí</h2>
+          <p>Soy Jeinux: estudio diseño gráfico y música. Me especializo en identidad visual, packaging creativo y contenido para redes. Me gusta crear cafetería-repostería con alma pedagógica (Kushiberry) y trabajar proyectos con estética amable y juguetona.</p>
+        </section>
+
+        <section style="margin-top:14px" class="card">
+          <h2 class="section-title">Portafolio</h2>
+          <div class="portfolio">
+            <div class="proj">
+              <strong>Proyecto — Identidad</strong>
+              <p>Rediseño de marca y empaque para repostería.</p>
+            </div>
+            <div class="proj">
+              <strong>Proyecto — Poster</strong>
+              <p>Cartel promocional para feria de emprendedores.</p>
+            </div>
+            <div class="proj">
+              <div style="height:10px"></div>
+            </div>
+            <div class="proj">
+              <div style="height:10px"></div>
+            </div>
+          </div>
+        </section>
+
+        <section style="margin-top:14px" class="card">
+          <h2 class="section-title">Servicios</h2>
+          <ul>
+            <li>Identidad visual y logos</li>
+            <li>Packaging y etiquetas</li>
+            <li>Diseño para redes sociales</li>
+            <li>Talleres creativos y packaging reutilizable</li>
+          </ul>
+        </section>
+
+      </div>
+
+      <aside>
+        <div class="card">
+          <h3 class="section-title">Habilidades</h3>
+          <div class="skills">
+            <span class="chip">Adobe Illustrator</span>
+            <span class="chip">Photoshop</span>
+            <span class="chip">Figma</span>
+            <span class="chip">Ilustración</span>
+            <span class="chip">Branding</span>
+            <span class="chip">Diseño UX/UI</span>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <h3 class="section-title">Contacto</h3>
+          <p id="contact">Email: <strong>jeinux@example.com</strong></p>
+          <p>Instagram: <strong>@jeinux</strong></p>
+          <p>Ciudad: Barranquilla, Colombia</p>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <h3 class="section-title">Disponibilidad</h3>
+          <p>Contratos freelance, colaboraciones y talleres. Abierta a prácticas y proyectos creativos.</p>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      © Jeinux — Diseño personal · Kushiberry
+    </footer>
+  </main>
+</body>
+</html>
